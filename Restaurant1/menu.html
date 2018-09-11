@@ -4,22 +4,64 @@
     <head>
       <meta charset="utf-8">
       <title >  Menu </title>
+
+      <link rel="stylesheet" href="restaurantStyles.css">
+      <style media="screen">
+
+
+       body{
+
+
+        background-color: #bdcebe;
+
+        }
+        section{
+          padding-top: 5px;
+          font-size:20px;
+        }
+        #food th
+        {
+          font-size: 24px;
+          vertical-align:top;
+
+        }
+        #food td
+        {
+            font-size:20px;
+        }
+        #drink tbody td:nth-child(even){
+
+          text-align: right;
+        }
+        #drink
+        {
+          background-color: #d6cbd3;
+          border: 2px Black solid;
+          border-bottom: none;
+        }
+        #drink tbody td:nth-child(odd){
+
+          text-align: left;
+          padding-right: 10px;
+        }
+
+      </style>
     </head>
     <body>
 
 
-      <header style="text-align:center">
+      <header >
         <h1>Creative Restaurant Name </h1>
-        <hr />
-      </header>
+
       <nav>
-        <p> <a href="index.html">Home</a>    <a href="menu.html">Menu</a> <a href="contact.html"> Contact Us</a>
-      </nav>
-      <hr />
+  			<p> <a href="index.html">Home</a>    <a class="middle" href="menu.html">Menu</a> <a href="contact.html"> Contact Us</a>
+  		</nav>
+
+      </header>
 
       <section>
         <center>
-        <table>
+        <table id="food">
           <tr>
             <th>Burgers and Fries</th> <th> Hot Dog and Chips</th> <th>Italian Sausage</th>
           </tr>
@@ -34,16 +76,41 @@
           </tr>
           <tr>
             <td style="text-align:center; vertical-align: top;"> Really Hits the Spot! <br> Plain or Sesame Bun<br> Pickle, onion,tomato, and lettuce <br> Served with our house-made chips<br> $8.95 </td>
-            <td style="text-align:center; vertical-align: top;"> On te Lighter Side <br> Your choice - with or without cheese<br> Iceberg lettuce, tomatoes, peppers<br> Thousand Islands or Ranch Dressing  <br> Served with a Dinner roll <br> $6.95</td>
+            <td style="text-align:center; vertical-align: top;"> On the Lighter Side <br> Your choice - with or without cheese<br> Iceberg lettuce, tomatoes, peppers<br> Thousand Islands or Ranch Dressing  <br> Served with a Dinner roll <br> $6.95</td>
             <td style="text-align:center; vertical-align: top;"> A Taste of Texas! <br> Smoked Brisket on a thick-cut of Texas Toast <br> Cole Slaw <br>  Served with our famous thick cut <br> french fries<br> $7.95 </td>
 
           </tr>
         </table>
+
+
+        <table id="drink">
+          <thead>
+            <tr>
+              <th colspan="2"> Beverages </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Root Beer </td> <td>$3.00</td>
+            </tr>
+            <tr>
+              <td>Bottled Water</td><td>$1.25</td>
+            </tr>
+            <tr>
+              <td>Lemonade</td><td>$1.00</td>
+            </tr>
+            <tr>
+              <td> Iced Tea </td> <td>$1.25</td>
+            </tr>
+            <tr>
+              <td>Blue Milk</td><td>$2.00</td>
+            </tr>
+          </tbody>
+        </table>
       </center>
 
 
-      <footer style="text-align:center">
-          <hr>
+      <footer >
           <p> 123 Fictitious St, Dallas,TX, 75235 <br> 555-555-5555</p>
       </footer>
     </body>
