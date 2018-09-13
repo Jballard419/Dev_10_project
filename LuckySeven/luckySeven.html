@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <script type="text/JavaScript" src="luckySeven.js"></script>
+
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<center>
+  <header>
+    <h1>Lucky Sevens</h1>
+  </header>
+  
+
+  <form class="form-inline"  onsubmit="return casino();" method="post">
+    <label for="bet"> Strating Bet:</label>
+    <input type="text" name="bet" id="bet" value="$0.00"><br/>
+
+    <button type="submit" id="submitButton" value="Play" class="btn btn-default"> Play </button>
+
+  </form>
+  <div id="Results" style="display: none;" >
+    <table >
+      <hr/>
+      <h1> Results<h1>
+      <tr>
+        <td>Starting Bet</td><td>$<span id="startingbet"></span></td>
+      </tr>
+      <tr>
+        <td>Total Rows Before Going Broke</td><td><span id="totalrolls"></span></td>
+      </tr>
+      <tr>
+        <td>Highest Amount Won</td><td>$<span id="maxAmount"></span></td>
+      </tr>
+      <tr>
+        <td>Roll Count at Highest Amount Won</td><td><span id="rollsatmax"></span></td>
+      </tr>
+    </table>
+  </div>
+
+</center>
+</body>
+</html>
