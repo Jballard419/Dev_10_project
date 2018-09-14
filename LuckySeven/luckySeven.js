@@ -13,22 +13,27 @@ function game(bet) {
   }
 
 }
-// Quick funiction  to confirm dice distrubution
-function testDice()
+// funiction: testDice()
+//Purpose  to confirm dice roll a value the correct perect  of times
+// pre: the number to test
+//post: the % times that number appears (looking for ~.16 of the time for 7)
+function testDice( num)
 {
-  for (var i = 0; i < 1000000; i++)
+  var rolls=360000; //36 * 10^n to hopefully give nice fractions
+  var wins=0;
+  for (var i = 0; i < rolls; i++)
    {
-    if((rollDice(6)+rollDice(6))===1)
+    if((rollDice(6)+rollDice(6))==num)
     {
-      return false;
+      wins++;
     }
    }
-   return true;
+   return (wins/rolls);
 }
 
 /*
   funiction: table())
-  name: purpose handles calling the game() and recording values until the money runs out.
+   purpose: handles calling the game() and recording values until the money runs out.
   pre: the init bet for game()
   post: an object containing the init bet roll's before broke, the max money, and the rolls at max
 
@@ -57,9 +62,9 @@ function table(bet) {
 
 /*
   funiction: table())
-  name: purpose handles the Dom and calling table
+  name: purpose handles the Dom and calling table()
   pre: user submit the form
-  post: Table filled out 
+  post: Table filled out
 
 */
 function casino(){

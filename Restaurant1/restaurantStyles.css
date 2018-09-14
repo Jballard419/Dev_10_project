@@ -1,27 +1,35 @@
 /* @import url('https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css'); */
 @import url('https://fonts.googleapis.com/css?family=Monofett');
-@font-face {
+/* @font-face {
   font-family: "Aurek-Besh";
   src: url(Aurek-Besh.woff);
-}
-header{
-  margin: 0;
-  display:grid;
-  background-color: #eca1a6;
-
-
-  text-align: center;
-
-
-
-  border: 2px black solid;
-
-
-
-  width: auto;
+} */
+.myJumbotron
+{
+    background-color: #eca1a6;
 
 }
-Header h1
+/* .myJumbotron a
+{
+  text-decoration: underline;
+} */
+
+.myJumbotron a:active
+{
+ text-decoration: none;
+
+}
+
+.myJumbotron a:visited
+{
+  color: black;
+}
+
+{
+
+}
+
+ h1
 {
   font-weight: bold;
   font-size: 30px;
@@ -37,7 +45,7 @@ nav
 
 
 }
-nav a:hover
+/* nav a:hover
 {
   font-weight: bold;
 }
@@ -55,7 +63,7 @@ nav .middle
   margin-right: 10%;
   margin-left: 10%;
 
-}
+} */
 footer
 {
 

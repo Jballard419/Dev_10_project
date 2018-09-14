@@ -5,13 +5,10 @@
       <meta charset="utf-8">
       <title >  Menu </title>
 
-      <link rel="stylesheet" href="restaurantStyles.css">
       <style media="screen">
 
 
        body{
-
-
         background-color: #bdcebe;
 
         }
@@ -19,10 +16,11 @@
           padding-top: 5px;
           font-size:20px;
         }
-        #food th
+        .item
         {
           font-size: 24px;
-          vertical-align:top;
+          font-weight: bold;
+
 
         }
         #food td
@@ -46,71 +44,92 @@
         }
 
       </style>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+      <link rel="stylesheet" href="restaurantStyles.css">
+
     </head>
     <body>
 
 
-      <header >
-        <h1>Creative Restaurant Name </h1>
+      <div class="jumbotron jumbotron-fluid myJumbotron">
 
-      <nav>
-  			<p> <a href="index.html">Home</a>    <a class="middle" href="menu.html">Menu</a> <a href="contact.html"> Contact Us</a>
-  		</nav>
+        <div class= "container-fluid">
 
-      </header>
+          <h1>Creative Restaurant Name </h1>
+
+          <nav class="nav nav-pills nav-fill">
+
+              <a class="nav-link  nav-item " href="index.html">Home</a>
+
+              <a class="nav-link  nav-item active" href="menu.html">Menu</a>
+
+              <a class="nav-link  nav-item" href="contact.html"> Contact Us</a>
+
+          </nav>
+
+        </div>
+      </div>
 
       <section>
-        <center>
+        <div class="container">
+
+
         <table id="food">
-          <tr>
-            <th>Burgers and Fries</th> <th> Hot Dog and Chips</th> <th>Italian Sausage</th>
-          </tr>
-          <tr>
-            <td style="text-align:center; vertical-align: top; "> An American Classic! <br> Your choice - with or without cheese<br> Pickle, onion,tomato, and lettuce <br> Served with our famous thick cut <br> french fries<br> $7.95 </td>
-            <td style="text-align:center; vertical-align: top;"> A Summer Classic! <br> Your choice - white or wheat bun <br> Relish,mustard, and ketchup<br> Served with our house-made chips<br> $7.95</td>
-            <td style="text-align:center; vertical-align: top;"> An All-Time Favorite! <br> Your choice - mild or spicy Cole Slaw <br> Served with garlic mashers<br> $10.95</td>
 
-          </tr>
-          <tr>
-            <th>Tenderloin Sandwich and Chips</th> <th> House Salad</th> <th>Brisket Sandwich and Fries</th>
-          </tr>
-          <tr>
-            <td style="text-align:center; vertical-align: top;"> Really Hits the Spot! <br> Plain or Sesame Bun<br> Pickle, onion,tomato, and lettuce <br> Served with our house-made chips<br> $8.95 </td>
-            <td style="text-align:center; vertical-align: top;"> On the Lighter Side <br> Your choice - with or without cheese<br> Iceberg lettuce, tomatoes, peppers<br> Thousand Islands or Ranch Dressing  <br> Served with a Dinner roll <br> $6.95</td>
-            <td style="text-align:center; vertical-align: top;"> A Taste of Texas! <br> Smoked Brisket on a thick-cut of Texas Toast <br> Cole Slaw <br>  Served with our famous thick cut <br> french fries<br> $7.95 </td>
 
-          </tr>
+          <div class="row "  style="text-align:center; margin-top:7px; ">
+
+
+            <div class="col-md-6 col-lg-4"><div class="item">Burgers and Fries </div> <br> An American Classic!  Your choice - with or without cheese Pickle, onion,tomato, and lettuce  Served with our famous thick cut  french fries <br> $7.95 </div>
+            <div class="col-md-6 col-lg-4"><div class="item"> Hot Dog and Chips</div><br> A Summer Classic!  Your choice - white or wheat bun  Relish,mustard, and ketchup Served with our house-made chips <br> $7.95</div>
+            <div class="col-md-6 col-lg-4"><div class="item">  Italian Sausage</div><br>An All-Time Favorite!  Your choice - mild or spicy Cole Slaw  Served with garlic mashers <br> $10.95</div>
+
+
+
+
+
+            <div class="col-md-6 col-lg-4"><div class="item"> Tenderloin Sandwich and Chips</div><br>Really Hits the Spot!  Plain or Sesame Bun Pickle, onion,tomato, and lettuce  Served with our house-made chips <br> $8.95 </div>
+            <div class="col-md-6 col-lg-4"> <div class="item">House Salad</div><br>  On the Lighter Side  Your choice - with or without cheese Iceberg lettuce, tomatoes, peppers Thousand Islands or Ranch Dressing   Served with a Dinner roll  <br> $6.95</div>
+            <div class="col-md-6 col-lg-4"> <div class="item">Brisket Sandwich and Fries</div><br> A Taste of Texas! <br>  Smoked Brisket on a thick-cut of Texas Toast  Cole Slaw   Served with our famous thick cut  french fries <br> $7.95 </div>
+          </div>
+
         </table>
-
+        </div>
 
         <table id="drink">
           <thead>
-            <tr>
+
               <th colspan="2"> Beverages </th>
             </tr>
           </thead>
           <tbody>
-            <tr>
+
               <td>Root Beer </td> <td>$3.00</td>
             </tr>
-            <tr>
+
               <td>Bottled Water</td><td>$1.25</td>
             </tr>
-            <tr>
+
               <td>Lemonade</td><td>$1.00</td>
             </tr>
-            <tr>
+
               <td> Iced Tea </td> <td>$1.25</td>
             </tr>
-            <tr>
+
               <td>Blue Milk</td><td>$2.00</td>
             </tr>
           </tbody>
         </table>
-      </center>
+
 
 
       <footer >
           <p> 123 Fictitious St, Dallas,TX, 75235 <br> 555-555-5555</p>
       </footer>
+
+
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
     </body>
