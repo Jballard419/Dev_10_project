@@ -21,6 +21,7 @@ $RECYCLE.BIN/
 # =========================
 # Operating System Files
 # =========================
+bootstrap-4.1.3-dist/*
 Examples/JavaScpitstuff/countingCharacters.html
 Examples/JavaScpitstuff/countingCharacters.js
 Examples/JavaScpitstuff/loggingLetter.html
