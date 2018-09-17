@@ -84,11 +84,11 @@
 
 			<div class="form-group col-md-6 col-lg-4 ">
 
-      <label class="col-form-label" for="phone"> Phone:</label>
-      <input  class=" form-control  mb-0 " type="tel" name="phone" id="phone" required pattern="[0-9]{3}(-)?[0-9]{3}(-)?[0-9]{4}">
-			<div class="invalid-feedback">
-				Please Input in the XXX-XXX-XXXX
-			</div>
+	      <label class="col-form-label" for="phone"> Phone:</label>
+	      <input  class=" form-control  mb-0 " type="tel" name="phone" id="phone" required pattern="[0-9]{3}(-)?[0-9]{3}(-)?[0-9]{4}">
+				<div class="invalid-feedback">
+					Please Input in the XXX-XXX-XXXX
+				</div>
 
 			</div>
 			<div class="form-group col-md-6 col-lg-4">
@@ -104,35 +104,12 @@
       </select> <br/>
 
 			</div>
-			<div class="form-group col-md-6 col-lg-4" style="vertical-align: top" id="checklist">
+			<div class="form-group col-md-6 col-lg-4">
+				<label class="col-form-label" for="textarea" style="font-weight: normal"> Additonal Info: </label>
+				<textarea class="form-control" id="textarea" rows="3"></textarea>
+			</div>
 
 
-
-      <legend class="col-form-label pt-0">Best days to contact you:</legend>
-
-			<div class="form-check form-check-inline">
-	      <input class="form-check-input" type="checkbox" id="m" name="date" value="m" >
-	      <label class="form-check-label" for="m">M</label>
-		  </div>
-			<div class="form-check form-check-inline">
-				<input class="form-check-input" type="checkbox" id="t" name="date" value="t" >
-	      <label class="form-check-label" for="t">T</label>
-			</div>
-			<div class="form-check form-check-inline">
-				<input class="form-check-input" type="checkbox" id="w" name="date" value="w" >
-	      <label class="form-check-label" for="w">W</label>
-			</div>
-			<div class="form-check form-check-inline">
-				<input class="form-check-input" type="checkbox" id="th" name="date" value="th" >
-	      <label class="form-check-label" for="th">Th</label>
-			</div>
-			<div class="form-check form-check-inline">
-				<input class="form-check-input" type="checkbox" id="f" name="date" value="f" >
-	      <label class="form-check-label" for="f">F</label>
-			</div>
-      <br />
-
-			</div>
 			<div class="form-group col-md-6 col-lg-4">
       <legend class="col-form-label pt-0"> Have you been to the Restaurant:</label>
 				<br>
@@ -146,6 +123,35 @@
 	        <label class="form-check-label" for="choice1">Yes</label>
 				</div>
 
+
+			</div>
+			<div class="form-group col-md-6 col-lg-4 offset-lg-4" style="vertical-align: top" id="checklist">
+
+
+
+				<legend class="col-form-label pt-0">Best days to contact you:</legend>
+
+				<div class="form-check form-check-inline">
+					<input class="form-check-input" type="checkbox" id="m" name="date" value="m" >
+					<label class="form-check-label" for="m">M</label>
+				</div>
+				<div class="form-check form-check-inline">
+					<input class="form-check-input" type="checkbox" id="t" name="date" value="t" >
+					<label class="form-check-label" for="t">T</label>
+				</div>
+				<div class="form-check form-check-inline">
+					<input class="form-check-input" type="checkbox" id="w" name="date" value="w" >
+					<label class="form-check-label" for="w">W</label>
+				</div>
+				<div class="form-check form-check-inline">
+					<input class="form-check-input" type="checkbox" id="th" name="date" value="th" >
+					<label class="form-check-label" for="th">Th</label>
+				</div>
+				<div class="form-check form-check-inline">
+					<input class="form-check-input" type="checkbox" id="f" name="date" value="f" >
+					<label class="form-check-label" for="f">F</label>
+				</div>
+				<br />
 
 			</div>
 
